@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: it.uniroma2.dicii.isw2.jcs.paramTests.MyJCSLightLoadUnitTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in it.uniroma2.dicii.isw2.jcs.paramTests.MyJCSLightLoadUnitTest
+initializationError(it.uniroma2.dicii.isw2.jcs.paramTests.MyJCSLightLoadUnitTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.Exception: No public static parameters method on class it.uniroma2.dicii.isw2.jcs.paramTests.MyJCSLightLoadUnitTest
+

@@ -1,31 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: org.apache.jcs.JCSLightLoadUnitTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.14 sec <<< FAILURE!
-testSimpleLoad(org.apache.jcs.JCSLightLoadUnitTest)  Time elapsed: 0.078 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.114 s <<< FAILURE! - in org.apache.jcs.JCSLightLoadUnitTest
+testSimpleLoad(org.apache.jcs.JCSLightLoadUnitTest)  Time elapsed: 0.083 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load properties for name [/TestSimpleLoad.ccf]
-	at org.apache.jcs.engine.control.CompositeCacheManager.configure(CompositeCacheManager.java:242)
-	at org.apache.jcs.JCS.ensureCacheManager(JCS.java:102)
-	at org.apache.jcs.JCS.getInstance(JCS.java:64)
 	at org.apache.jcs.JCSLightLoadUnitTest.setUp(JCSLightLoadUnitTest.java:45)
-	at junit.framework.TestCase.runBare(TestCase.java:139)
-	at junit.framework.TestResult$1.protect(TestResult.java:122)
-	at junit.framework.TestResult.runProtected(TestResult.java:142)
-	at junit.framework.TestResult.run(TestResult.java:125)
-	at junit.framework.TestCase.run(TestCase.java:129)
-	at junit.framework.TestSuite.runTest(TestSuite.java:252)
-	at junit.framework.TestSuite.run(TestSuite.java:247)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 

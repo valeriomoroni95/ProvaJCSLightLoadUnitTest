@@ -40,7 +40,13 @@ public class MyJCSLightLoadUnitTest {
 	}
 	
 	@Parameters
-	//capisci come passare i parametri
+	public static Collection getParam() {
+		return Arrays.asList(new Integer[][] {
+			{20000},
+			{10000},
+			{3000},
+		});
+	}
 	
 	
 	@Test
