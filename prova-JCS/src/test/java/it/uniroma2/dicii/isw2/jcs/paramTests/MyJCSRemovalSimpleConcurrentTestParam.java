@@ -8,6 +8,7 @@ import org.junit.Test;
 public class MyJCSRemovalSimpleConcurrentTestParam {
 	
 	private int count;
+	private String expectedRes;
 
 	@Before
 	public static void setUp() {
@@ -25,8 +26,9 @@ public class MyJCSRemovalSimpleConcurrentTestParam {
 	}
 	
 	
-	public JCSRemovalSimpleConcurrentTestParam(int count) {
+	public JCSRemovalSimpleConcurrentTestParam(int count, String expectedRes) {
 		this.count = count;
+		this.expectedRes= expectedRes;
 	}
 	
 	

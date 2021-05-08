@@ -17,7 +17,7 @@ import static org.junit.Assert.assertNull;
 public class MyJCSLightLoadUnitTest {
 	
 	private static int items;
-	private static String testName;
+	private static String expectedRes;
 	
 	private void configure(){
         JCS.setConfigFilename("/TestSimpleLoad.ccf");
@@ -34,13 +34,13 @@ public class MyJCSLightLoadUnitTest {
 		configure();
 	}
 	
-	public MyJCSLightLoadUnitTest(int items, String testName) {
+	public MyJCSLightLoadUnitTest(int items, String expectedRes) {
 		this.items=items;
-		this.testName=testName;
+		this.expectedRes=expectedRes;
 	}
 	
 	@Parameters
-	public static Collection getParam() {
+	public static Collection getParameters() {
 		return Arrays.asList(new Integer[][] {
 			{20000},
 			{10000},
